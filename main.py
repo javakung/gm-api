@@ -12,6 +12,9 @@ from fastapi.responses import PlainTextResponse
 
 app = FastAPI()
 
+def conan():
+    return 'Hello Conan'
+
 def result(res):
     return {"result":res}
 
