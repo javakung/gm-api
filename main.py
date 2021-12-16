@@ -12,6 +12,11 @@ from fastapi.responses import PlainTextResponse
 
 app = FastAPI()
 
+
+@app.request('/bmi')
+def bmi(h:int=1,w:int=0):
+    return w/((h/100)**2)
+
 @app.get("/conan")
 def conan():
     return 'Hello Conan'
