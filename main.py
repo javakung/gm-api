@@ -13,7 +13,7 @@ from fastapi.responses import PlainTextResponse
 app = FastAPI()
 
 
-@app.request('/bmi')
+@app.get('/bmi')
 def bmi(h:int=1,w:int=0):
     return w/((h/100)**2)
 
